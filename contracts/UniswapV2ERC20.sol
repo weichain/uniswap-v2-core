@@ -6,14 +6,12 @@ import './libraries/SafeMath.sol';
 contract UniswapV2ERC20 is IUniswapV2ERC20 {
     using SafeMath for uint;
 
-    string public constant name = 'Uniswap V2';
-    string public constant symbol = 'UNI-V2';
-    uint8 public constant decimals = 18;
+    string public constant name = 'Hydraswap';
+    string public constant symbol = 'HYD';
+    uint8 public constant decimals = 8;
     uint  public totalSupply;
     mapping(address => uint) public balanceOf;
     mapping(address => mapping(address => uint)) public allowance;
-    
-    mapping(address => uint) public nonces;
 
     function _mint(address to, uint value) internal {
         totalSupply = totalSupply.add(value);

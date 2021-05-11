@@ -15,8 +15,6 @@ interface IUniswapV2Pair {
     function transfer(address to, uint value) external returns (bool);
     function transferFrom(address from, address to, uint value) external returns (bool);
 
-    function nonces(address owner) external view returns (uint);
-
     event Mint(address indexed sender, uint amount0, uint amount1);
     event Burn(address indexed sender, uint amount0, uint amount1, address indexed to);
     event Swap(
@@ -44,4 +42,5 @@ interface IUniswapV2Pair {
     function skim(address to) external;
     function sync() external;
 
+    function initialize(address, address) external;
 }
