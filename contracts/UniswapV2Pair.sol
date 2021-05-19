@@ -1,5 +1,4 @@
 pragma solidity =0.5.4;
-// pragma solidity 0.7.4;
 
 import './interfaces/IUniswapV2Pair.sol';
 import './UniswapV2ERC20.sol';
